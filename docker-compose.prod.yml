@@ -17,6 +17,6 @@ services:
     command: node index.js
   
   mongo:
-    mongo-db:
+    environment: :
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
